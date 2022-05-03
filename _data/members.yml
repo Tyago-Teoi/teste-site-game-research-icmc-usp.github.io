@@ -1,0 +1,10 @@
+# Lista de membros do grupo de pesquisa em jogos.
+# O número é o identificador (número USP) do membro do grupo.
+1:
+  name: Leonardo T. Pereira
+  picture: /assets/img/members/leonardo.jpg
+  current: true
+11920060:
+  name: Breno M. F. Viana
+  picture: /assets/img/members/breno.jpg
+  current: false

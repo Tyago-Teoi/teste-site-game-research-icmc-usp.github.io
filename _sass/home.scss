@@ -1,0 +1,155 @@
+/**
+ * Homepage.
+ */
+.home-content {
+  flex: 1;
+  padding: 0;
+  background-color: $background-color;
+}
+
+.home-wrapper {
+  max-width: -webkit-calc(#{100%});
+  max-width:         calc(#{100%});
+
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{100%});
+    max-width:         calc(#{100%});
+  }
+
+  padding: 0;
+
+  .wrapper {
+    background-color: $gray-color;
+  }
+}
+
+.background {
+  background-image: url("https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: $homepage-background;
+  flex: 1;
+  display: flex;
+}
+
+.gray-filter {
+  background-color: $gray-color-a8;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  color: $orange-color;
+  font-size: $homepage-font-size;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/**
+ * General.
+ */
+.home-title {
+  color: $white-color;
+}
+
+.home-section {
+  padding: $spacing-unit;
+}
+
+
+/**
+ * About section.
+ */
+.about {
+  padding-top: $spacing-unit * 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+/**
+ * News section.
+ */
+.news {
+  .news-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+      margin-bottom: $spacing-unit;
+    }
+  }
+}
+
+
+/**
+ * Suppot section.
+ */
+.support {
+  .instituitions {
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+
+    .institution {
+      width: 250px;
+      display: inline-block;
+      padding-bottom: $spacing-unit;
+    }
+
+    .institution-left {
+      padding-right: $spacing-unit;
+    }
+
+    .institution-right {
+      padding-left: $spacing-unit;
+    }
+
+    .stretch {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}
+
+
+/**
+ * Slider.
+ */
+
+// Navigation.
+.iis-previous-nav,
+.iis-next-nav {
+  background-color: $gray-color;
+}
+
+// Bullet Navigation.
+.iis-has-captions .iis-bullet-nav { max-width: 42%; }
+.iis-bullet-nav a {
+  border: 3px solid $gray-color;
+}
+.iis-bullet-nav a.iis-bullet-active,
+.iis-bullet-nav a:hover {
+  background: $orange-color;
+}
+
+// Captions.
+.iis-caption {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  background: $gray-color-a8;
+	border-radius: 5px;
+  font-size: $small-font-size;
+}
+.iis-caption .iis-caption-content,
+.iis-caption .iis-caption-content a,
+.iis-caption .iis-caption-content a:visited,
+.iis-caption .iis-caption-content a:hover,
+.iis-caption .iis-caption-content a:active {
+  color: $white-color;
+}

@@ -1,0 +1,20 @@
+# Slides de imagens da página inicial.
+# Adicionar imagens na pasta "assets/img/slides/" antes de adicionar na lista.
+# As imagens precisam ter o mesmo tamanho vertical e horizontal.
+# Largura: 1500 pixels. Altura: 650 pixels.
+- selector: home_slider
+  bullets: true
+  captions: true
+  settings:
+    height: "'auto'"
+    effect: "'fade'"
+  images:
+    - src: assets/img/slides/1.jpg
+      alt: img1
+      href: /projects/overlord
+    - src: assets/img/slides/2.jpg
+      alt: img3
+      href: /people/11920060
+    - src: assets/img/slides/3.jpg
+      alt: img3
+      href: /people/1

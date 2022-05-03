@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include data_format.html %}
+
+<div class="home">
+  <h1 class="page-heading">
+    {{ page.title }}
+    {% if page.mdate %}
+      <span class="post-meta">{% t global.last_updated_at %}: {{ page.mdate | date: date_format }}</span>
+    {% else %}
+      <span class="post-meta">{% t global.published_at %}: {{ page.date | date: date_format }}</span>
+    {% endif %}
+  </h1>
+
+  {{ content }}
+</div>

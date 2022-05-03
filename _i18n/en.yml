@@ -1,0 +1,55 @@
+langs:
+  br: BR
+  en: EN
+
+global:
+  tagline: English
+  # Main
+  title: Game Research Group
+  description: Game Research Group from ICMC.
+  # NavBar and Page Titles
+  news: News
+  people: People
+  projects: Projects
+  publications: Publications
+  partners: Partners
+  about: About
+  contact: Contact
+  # Footer
+  host: Host on GitHub Pages with Jekyll
+  # Remaining
+  published_at: Published at
+  last_updated_at: Last updated at
+  abstract: Abstract
+  keywords: Keywords
+
+# Homepage
+homepage:
+  welcome: A group dedicated to research in Digital Games
+  about: About the Group
+  recent_news: Recent News
+  support: Support
+
+# Profile
+profile:
+  about: About
+  research_interests: Research Interests
+  hobbies: Hobbies
+  games: Top 3 Games
+  links: Links
+
+# Projects
+projects:
+  abstract: Abstract
+  publications: Publications
+  team: Team
+
+# Sliders
+sliders:
+  img1: change image and description
+  img2: change image and description
+  img3: change image and description
+
+others:
+  notfound: Page not found
+  request_notfound: The requested page could not be found.

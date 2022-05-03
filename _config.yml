@@ -1,0 +1,63 @@
+# Site Info
+
+title: Grupo de Pesquisa em Jogos
+description: >- # this means to ignore newlines until "url:"
+  Grupo de Pesquisa em Jogos do ICMC.
+
+
+# Site Settings
+
+url: https://brenov.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: /:title
+timezone: America/Sao_Paulo
+mathjax: true # enables support for mathjax (LaTeX)
+languages: ["br", "en"]
+exclude_from_localizations: ["assets"]
+
+
+# Site Build
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Other Parameters
+
+plugins:
+  - jekyll-feed
+  - jekyll-multiple-languages-plugin
+
+collections:
+  news:
+    output: true
+  people:
+    output: true
+  projects:
+    output: true
+  publications:
+    output: true
+
+defaults:
+  - values:
+      locale: br
+  - scope:
+      path: _news/en/**
+      type: news
+    values:
+      locale: en
+  - scope:
+      path: _people/en/**
+      type: people
+    values:
+      locale: en
+  - scope:
+      path: _projects/en/**
+      type: projects
+    values:
+      locale: en
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

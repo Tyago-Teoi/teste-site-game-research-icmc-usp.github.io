@@ -1,0 +1,45 @@
+---
+layout: compress
+published: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		{% include head.html %}
+	</head>
+
+	<body>
+
+		{% include header.html %}
+
+    {% if page.ishome %}
+			<main class="home-content" aria-label="Content">
+				<div class="home-wrapper">
+					{{ content }}
+				</div>
+			</main>
+    {% else %}
+			{% if page.is404 %}
+		    <main class="notfound-content" aria-label="Content">
+		      <div class="notfound-wrapper">
+		        {{ content }}
+		      </div>
+		    </main>
+			{% else %}
+		    <main class="page-content" aria-label="Content">
+		      <div class="post-wrapper">
+		        {{ content }}
+		      </div>
+		    </main>
+    	{% endif %}
+		{% endif %}
+
+		{% include footer.html %}
+
+		{% include slider_scripts.html %}
+
+	</body>
+
+</html>

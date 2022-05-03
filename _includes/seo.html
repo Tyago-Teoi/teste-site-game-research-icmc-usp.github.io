@@ -1,0 +1,14 @@
+{% assign news = site.news | sort: 'locale' %}
+{% for post in news %}
+  <link rel="alternate" hreflang="{{ post.locale }}" href="{{ post.url }}" />
+{% endfor %}
+
+{% assign people = site.people | sort: 'locale' %}
+{% for post in people %}
+  <link rel="alternate" hreflang="{{ post.locale }}" href="{{ post.url }}" />
+{% endfor %}
+
+{% assign projects = site.projects | sort: 'locale' %}
+{% for post in projects %}
+  <link rel="alternate" hreflang="{{ post.locale }}" href="{{ post.url }}" />
+{% endfor %}

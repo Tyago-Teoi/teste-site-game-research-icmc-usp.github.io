@@ -1,0 +1,55 @@
+langs:
+  br: BR
+  en: EN
+
+global:
+  tagline: Português Brasileiro
+  # Main
+  title: Grupo de Pesquisa em Jogos
+  description: Grupo de Pesquisa em Jogos do ICMC.
+  # NavBar and Page Titles
+  news: Notícias
+  people: Pessoas
+  projects: Projetos
+  publications: Publicações
+  partners: Parcerias
+  about: Sobre
+  contact: Contato
+  # Footer
+  host: Hospedado no GitHub Pages com Jekyll
+  # Remaining
+  published_at: Publicado em
+  last_updated_at: Atualizado em
+  abstract: Resumo
+  keywords: Palavras-chave
+
+# Homepage
+homepage:
+  welcome: Um grupo dedicado à pesquisa em Jogos Digitais
+  about: Sobre o Grupo
+  recent_news: Notícias Recentes
+  support: Apoio
+
+# Profile
+profile:
+  about: Sobre
+  research_interests: Interesses de Pesquisa
+  hobbies: Passatempos
+  games: Top 3 Jogos
+  links: Links
+
+# Projects
+projects:
+  abstract: Resumo
+  publications: Publicações
+  team: Equipe
+
+# Sliders
+sliders:
+  img1: mudar imagem e descrição
+  img2: mudar imagem e descrição
+  img3: mudar imagem e descrição
+
+others:
+  notfound: Página não encontrada
+  request_notfound: A página solicitada não pôde ser encontrada.

@@ -1,0 +1,49 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" rel="author" href="{{ site.baseurl }}/">{% t global.title %}</a>
+
+    <nav class="site-nav">
+      <div class="trigger">
+        {% assign link = '/news' %}
+        <a class="page-link" href="{{ link | prepend: site.baseurl }}">{% t global.news %}</a>
+        {% assign link = '/people' %}
+        <a class="page-link" href="{{ link | prepend: site.baseurl }}">{% t global.people %}</a>
+        {% assign link = '/projects' %}
+        <a class="page-link" href="{{ link | prepend: site.baseurl }}">{% t global.projects %}</a>
+        {% assign link = '/publications' %}
+        <a class="page-link" href="{{ link | prepend: site.baseurl }}">{% t global.publications %}</a>
+        {% assign link = '/partners' %}
+        <a class="page-link" href="{{ link | prepend: site.baseurl }}">{% t global.partners %}</a>
+        {% assign link = '/about' %}
+        <a class="page-link" href="{{ link | prepend: site.baseurl }}">{% t global.about %}</a>
+        {% assign link = '/contact' %}
+        <a class="page-link" href="{{ link | prepend: site.baseurl }}">{% t global.contact %}</a>
+
+        <!-- Adds links to other languages on the post -->
+        {% for lang in site.languages %}
+          {% unless site.lang == lang %}
+            {% if lang == site.default_lang and site.default_locale_in_subfolder != true %}
+              {% assign url = page.url | replace: '/en', '' %}
+              <a href="{{ site.baseurl_root }}{{ url }}">{% t langs.{{ lang }} %}</a>
+            {% else %}
+              {% assign l = '/' | append: lang | append: '/' %}
+              {% assign url = page.url | replace: '/', l %}
+              <a href="{{ site.baseurl_root }}{{ url }}">{% t langs.{{ lang }} %}</a>
+            {% endif %}
+
+            {% assign next = forloop.index | plus: 1 %}
+
+            {% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %}
+              <span class="separator"> &bull; </span>
+            {% endif %}
+
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </nav>
+
+  </div>
+
+</header>

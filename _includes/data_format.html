@@ -1,0 +1,5 @@
+{% if site.lang == "br" %}
+  {% assign date_format = site.minima.date_format | default: "%d/%m/%Y" %}
+{% else %}
+  {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
+{% endif %}
