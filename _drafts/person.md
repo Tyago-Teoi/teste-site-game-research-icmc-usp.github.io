@@ -29,7 +29,6 @@ instagram: Link do Instagram # Se houver
 twitter: Link do Twitter # Se houver
 youtube: Link do Canal no YouTube # Se houver
 linkedin: Link do LinkedIn # Se houver
-current: true # Se a pessoa está ativa ou não no grupo
 ---
 
 Breve descrição sobre a pessoa.
