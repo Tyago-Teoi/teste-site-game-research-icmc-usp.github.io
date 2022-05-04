@@ -1,6 +1,7 @@
 ---
 layout: project # Não mudar
-order: 0 # Posição na lista de projetos (definir relevância)
+order: 0 # Posição na lista de projetos (definir relevância)]
+team: ID da equipe
 title: Título do Projeto
 date: 2021-12-31 # Data de publicação (ano-mês-dia)
 mdate: 2021-12-31 # Data de última edição, se houver (ano-mês-dia)
