@@ -14,7 +14,7 @@ timezone: America/Sao_Paulo
 mathjax: true # enables support for mathjax (LaTeX)
 languages: ["br", "en"]
 exclude_from_localizations: ["assets"]
-
+theme: jekyll-theme-minimal
 
 # Site Build
 
